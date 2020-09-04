@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/CSS/styles.css">
+	<meta charset="utf-8">
+	<title>About menus: multiple selections</title>
+	<link rel="icon" href="/img/pic2.jpg">
+	<style>
+		body {
+			font: 100% arial, helvetica, sans-serif;
+		}
+
+		fieldset {
+			padding: 0 1em 1em 1em;
+		}
+
+		legend {
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+	{{>header}}
+	<form action="someplace.php">
+		<fieldset>
+			<legend>{{legend}}</legend>
+			<label for="book">Name: </label>
+			<select name="book" id="book" size="5" multiple="multiple">
+				<option>The Outsider</option>
+				<option>The Rebel</option>
+				<option>The Plague</option>
+				<option>Things Fall Apart</option>
+				<option>Animal Farm</option>
+				<option>Nineteen Eighty-Four</option>
+				<option>Down and Out in Paris and London</option>
+			</select>
+		</fieldset>
+	</form>
+
+	<!-- Link back to HTML Dog: -->
+	<p><a href="http://www.htmldog.com/examples/"><img src="http://www.htmldog.com/badge1.gif" alt="HTML Dog"></a></p>
+	{{>footer}}
+</body>
+</html>

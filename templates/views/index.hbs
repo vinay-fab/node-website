@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/CSS/styles.css">
+	<meta charset="utf-8">
+    <title>Text and password inputs</title>
+	<style>
+		body {
+			font: 100% arial, helvetica, sans-serif;
+		}
+
+		fieldset {
+			padding: 0 1em 1em 1em;
+		}
+
+		legend {
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="main-content">
+		{{>header}}
+		<form>
+			<input placeholder="Location">
+			<button>search</button>
+		</form>
+		<p id="message-1"></p>
+		<p id="message-2"></p>
+		<form action="someplace.php">
+				<fieldset>
+					<legend>{{title}}</legend>
+					<img src="/img/pic3.jpg">
+					<label for="username">{{name}}:</label>
+				</fieldset>
+				<img class="porn" src="/img/pic1.jpg">
+    	</form>
+	</div>
+    {{>footer}}
+
+	<script src="/js/app.js"></script>
+</body>
+</html>
