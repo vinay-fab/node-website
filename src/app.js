@@ -20,23 +20,23 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 app.get('',(req,res)=>{
     res.render('index',{
-        title:'Aunty porn',
-        name:'naked ass',
+        title:'Weather App',
+        name:'Weather Application',
 
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-        legend:'About Aunty Porn',
-        name:'naked fat ass'
+        legend:'About Weather App',
+        name:'current Weather forecast'
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        legend:'Call 0564624914 for anal sex',
-        name:'naked fat ass'
+        legend:'Call 0252582 for hrlp',
+        name:'vinay kumar'
     })
 })
 //app.use('/help', express.static(path.join(__dirname, '../public/help.html')))
