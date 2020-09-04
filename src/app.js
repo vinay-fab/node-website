@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const geocode=require('./util/geocode')
 const forcast=require('./util/forcast')
 
+
 const app = express()
 //define path
 const viewsPath=path.join(__dirname, '../templates/views')
