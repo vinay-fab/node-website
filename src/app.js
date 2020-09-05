@@ -58,7 +58,7 @@ app.get('/weather',(req, res)=>{
                 
             })
         }
-        forcast(latitude, longitude,(error,forecastData)=>{
+        forcast(latitude, longitude,(error,textForecast)=>{
             if(error){
                 return res.send({
                     code : 404,
@@ -68,7 +68,7 @@ app.get('/weather',(req, res)=>{
             }
             res.send({
                 Location : location,
-                Data: forecastData
+                textForecast: textForecast
                 
             })
         })

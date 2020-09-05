@@ -10,11 +10,9 @@ const forcast =(latitude, longitude,  callback)=>{
             callback('response.body.error.info', undefined)
         }
         else{
-            callback(undefined,{
-                    weather_descriptions:body.current.weather_descriptions[0],
-                    feelslike:body.current.feelslike
-            })
-        }
+            callback(undefined,' Current temperature is  ' + body.current.temperature + '\n and  weather is '+
+                    body.current.weather_descriptions[0] + '\n wind direction is ' +  body.current.wind_dir)
+    }
     })
 }
 

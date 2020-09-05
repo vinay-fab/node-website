@@ -12,11 +12,14 @@ weatherform.addEventListener('submit',(e)=>{
     messageTwo.textContent = ''
     fetch('/weather?address='+location).then((response)=>{
         response.json().then((data)=>{
+           
             if(data.error){
                 messageOne.textContent= data.error
             }else{
+                console.log(data.Location)
+                console.log(data.textForecast)
                 messageOne.textContent = data.Location
-                messageTwo.textContent = data.Data.weather_descriptions
+                messageTwo.textContent = data.textForecast
             }
         })
 })
